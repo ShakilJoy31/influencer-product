@@ -1,0 +1,238 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+/* For influencer part */
+.top-part{
+    display: flex; 
+    justify-content: center;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 55px;
+    
+}
+.section:hover .camera-pic{
+    transform: scale(1.17);
+    transition: transform 1s ease-in;
+}
+
+
+.container-section{
+    display: flex;
+}
+
+.camera-pic{
+    background-image: url("images/Circle design.svg");
+}
+
+.camera-pic img{
+    width: 300px;
+    height: 300px;
+}
+
+a{
+    text-decoration: none;
+    background-color: rgb(196, 46, 71);
+    border-radius: 20px;
+    padding: 6px 25px 6px 25px;
+    color: white;
+}
+
+.fa-arrow-right{
+    margin-left: 6px;
+}
+
+.influencer-journey h1, p{
+    font-size: 21px;
+}
+
+header > h1{
+    font-size: 28px;
+}
+
+/* Poular collection */
+
+.adding-see-more{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.second-part{
+    display: flex;
+    justify-content: center;
+
+}
+
+.popular-collection{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.available-products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 29px;
+    grid-row-gap: 26px;
+}
+
+span{
+    margin-left:8px;
+    font-size: 19px;
+}
+
+.fa-star{
+    color: goldenrod;
+}
+
+.for-design{
+    padding: 12px;
+    box-shadow: 5px 5px 5px 5px gray;
+    transition: transform 0.5s;
+    
+}
+.for-design:hover{
+    transform: scale(1.05); 
+    
+}
+
+
+.accordingTo-column{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    flex-direction: column;
+}
+
+.see-more{
+    display: flex; 
+    flex-direction: row; 
+    justify-content:flex-end;
+    margin-right: 250px;
+    margin-top: 20px;
+} 
+
+
+
+/* For myself */
+.for-myself{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+    margin-top: 180px;
+}
+.tropical-burger{
+    position: absolute;
+    top: 0;
+    display: none;
+    width: 600px;
+    height: 900px;
+    color: skyblue;
+}  
+
+.for-myself:hover .tropical-burger{
+    display: block;
+}
+.for-myself:hover .burger{
+    transform: scale(1.67);
+    transition: transform 1s ease-in;
+}
+.offer{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    color: tomato;
+    background-color:wheat;
+}
+
+
+
+
+
+/* For footer part */
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 200px;
+    margin-bottom: 0;
+    background-color: navy;
+    color: white;
+}
+
+.para-margin{
+    margin-left: 82px;
+}
+
+.extra-margin{
+    margin-left: 80px;
+}
+.for-icon{
+    display: flex;
+    justify-content: center;
+}
+.fa-twitter{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.fa-youtube{
+    margin-right: 25px;
+}
+.copyright-margin{
+    margin-left: 26px;
+}
+
+
+/* For making the website Responsive */
+/* For mobile whose mazimum width is 700 pixel */
+@media (max-width:480px){
+    .section, .influencer-journey, .container-section, .camera-pic, .offer, .see-more{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:480px){
+    .available-products{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
+@media (max-width:480px){
+    .burger>img, .tropical-burger, .footer{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* For Tablet whose maximum width is  pixel */
+
+@media (min-width:481px) and (max-width: 688px){
+    .available-products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .for-design, .offer, .for-myself{
+        flex-wrap: wrap;
+        display: 100%;
+        
+    }
+    .see-more{
+        margin-right: 20px;
+        flex-wrap: wrap;
+    }
+}
