@@ -225,7 +225,6 @@ span{
         grid-template-columns: repeat(2, 1fr); 
         flex-direction: column;
         width: 100%;
-        flex-wrap: wrap;
     }
     .for-design, .offer, .for-myself{
         flex-wrap: wrap;
